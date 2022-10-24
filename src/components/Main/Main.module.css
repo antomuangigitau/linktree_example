@@ -22,6 +22,7 @@
   justify-content: center;
   gap: 26.25px;
   padding: 24px 0;
+  margin-bottom: 64px;
 }
 .btn__container button {
   background-color: transparent;
