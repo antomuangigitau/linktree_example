@@ -5,9 +5,11 @@ const Header = () => {
   return (
     <header className={styles['App__header']}>
       <div className={styles['container']}>
-        <div className={styles['header__container']}>
-          <Img id='profile__img' />
-          <h4 className={styles.name}>Annete Black</h4>
+        <div className={styles['main__header__container']}>
+          <div className={styles['header__container']}>
+            <Img id='profile__img' />
+            <h4 className={styles.name}>Annete Black</h4>
+          </div>
         </div>
         <div className={styles.round}>
           <ArrowShare />

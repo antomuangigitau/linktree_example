@@ -1,21 +1,22 @@
 .App__header {
-  width: 1152px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 44px;
+  margin-right: 144px;
   margin-bottom: 56px;
+  margin-left: 144px;
 }
 .container {
-  /* border: 1px solid red; */
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.main__header__container {
   width: 500px;
 }
 .header__container {
-  /* border: 1px solid red; */
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,9 +34,7 @@
   align-items: center;
   justify-content: center;
 }
-#profile__img {
-  flex: 1;
-}
+
 .name {
   margin-top: 24px;
   font-size: 20px;

@@ -1,5 +1,9 @@
+.main {
+  margin-left: 144px;
+  margin-right: 144px;
+}
 .btn {
-  width: 1152px;
+  width: 100%;
   /* display: block; */
   margin-bottom: 24px;
   padding: 24px 0;
@@ -13,7 +17,7 @@
   color: #101828;
 }
 .btn__container {
-  width: 1152px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 26.25px;

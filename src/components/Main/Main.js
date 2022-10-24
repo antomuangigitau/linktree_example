@@ -8,7 +8,7 @@ const Main = () => {
       {links.map((linkItem) => {
         const { id, title, link } = linkItem;
         return (
-          <button className={styles.btn} key={id}>
+          <button id='' className={styles.btn} key={id}>
             <a className={styles.links} href={link}>
               {title}
             </a>
