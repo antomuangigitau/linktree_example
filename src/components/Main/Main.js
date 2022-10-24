@@ -19,7 +19,7 @@ const Main = () => {
         <a id='slack' href='_'>
           <Slack />
         </a>
-        <a id='github' href='_'>
+        <a id='github' href='https://github.com/antomuangigitau'>
           <Github />
         </a>
       </div>
