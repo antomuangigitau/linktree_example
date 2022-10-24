@@ -11,7 +11,13 @@
 html {
   font-family: 'Inter', sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+}
 body {
   width: 100%;
   min-height: 100vh;
