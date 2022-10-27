@@ -27,3 +27,10 @@
 .btn__container button {
   background-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

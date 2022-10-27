@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import { Img, ArrowShare } from '../../icons';
+import { Img, ArrowShare, Icon } from '../../icons';
 const Header = () => {
   return (
     <header className={styles['App__header']}>
@@ -18,6 +18,7 @@ const Header = () => {
         </div>
         <div className={styles.round}>
           <ArrowShare />
+          <Icon />
         </div>
       </div>
     </header>
