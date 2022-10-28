@@ -12,7 +12,7 @@ const Header = () => {
               Tony Mwartial
             </h4>
             <h4 id="slack" className={styles.slack}>
-              Antony Mwangi
+              Antony_Mwangi
             </h4>
           </div>
           <div className={styles.round}>
