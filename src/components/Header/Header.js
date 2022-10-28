@@ -15,10 +15,10 @@ const Header = () => {
               Antony Mwangi
             </h4>
           </div>
-        </div>
-        <div className={styles.round}>
-          <ArrowShare />
-          <Icon />
+          <div className={styles.round}>
+            <ArrowShare />
+            <Icon />
+          </div>
         </div>
       </div>
     </header>
