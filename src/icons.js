@@ -91,7 +91,7 @@ export const Github = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_4627_392534)">
+      <g clipPath="url(#clip0_4627_392534)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -141,7 +141,7 @@ export const Icon = () => {
       <path
         d="M7.99998 2.83332C8.46022 2.83332 8.83331 2.46023 8.83331 1.99999C8.83331 1.53975 8.46022 1.16666 7.99998 1.16666C7.53974 1.16666 7.16665 1.53975 7.16665 1.99999C7.16665 2.46023 7.53974 2.83332 7.99998 2.83332Z"
         stroke="#98A2B3"
-        strokewidth="1.66667"
+        strokeWidth="1.66667"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
