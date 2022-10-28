@@ -7,11 +7,11 @@ const Header = () => {
       <div className={styles['container']}>
         <div className={styles['main__header__container']}>
           <div className={styles['header__container']}>
-            <Img id='profile__img' />
-            <h4 id='twitter' className={styles.name}>
+            <Img />
+            <h4 id="twitter" className={styles.name}>
               Tony Mwartial
             </h4>
-            <h4 id='slack' className={styles.slack}>
+            <h4 id="slack" className={styles.slack}>
               Antony Mwangi
             </h4>
           </div>

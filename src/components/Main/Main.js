@@ -8,18 +8,16 @@ const Main = () => {
       {links.map((linkItem) => {
         const { id, title, link } = linkItem;
         return (
-          <button id='' className={styles.btn} key={id}>
-            <a className={styles.links} href={link}>
-              {title}
-            </a>
-          </button>
+          <a id={id} className={styles.btn} key={id} href={link}>
+            <span className={styles.links}>{title}</span>
+          </a>
         );
       })}
       <div className={styles['btn__container']}>
-        <a id='slack' href='_'>
+        <a id="slack" href="_">
           <Slack />
         </a>
-        <a id='github' href='https://github.com/antomuangigitau'>
+        <a id="github" href="https://github.com/antomuangigitau">
           <Github />
         </a>
       </div>
