@@ -1,13 +1,24 @@
 import React from 'react';
 import styles from './Header.module.css';
-import { Img, ArrowShare, Icon } from '../../icons';
+import { ArrowShare, Icon } from '../../icons';
+import profile_img from '../../images/profile__img.png';
 const Header = () => {
   return (
     <header className={styles['App__header']}>
       <div className={styles['container']}>
         <div className={styles['main__header__container']}>
           <div className={styles['header__container']}>
-            <Img />
+            <a
+              className={styles['avatar__link']}
+              href="https://twitter.com/tonymwartial"
+            >
+              <img
+                className={styles['profile__img']}
+                id="profile__img"
+                src={profile_img}
+                alt=""
+              />
+            </a>
             <h4 id="twitter" className={styles.name}>
               Tony Mwartial
             </h4>

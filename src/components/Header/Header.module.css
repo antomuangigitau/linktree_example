@@ -27,9 +27,6 @@
   margin-right: auto;
 }
 
-.header__container svg:hover {
-  fill: rgba(52, 64, 84, 0.75);
-}
 .round {
   width: 40px;
   height: 40px;
