@@ -6,15 +6,25 @@ const ContactForm = () => {
   const [lastName, setLastName] = useState('');
   const [isEmail, setIsEmail] = useState('');
   const [isTextArea, setIsTextArea] = useState('');
+  const [error, setIsError] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (
+      !firstName.length ||
+      !lastName.length ||
+      !isEmail.length ||
+      !isTextArea.length
+    ) {
+      setIsError(true);
+    }
     if (firstName && lastName && isEmail && isTextArea) {
       alert('Submitted');
       setFirstName('');
       setLastName('');
       setIsEmail('');
       setIsTextArea('');
+      setIsError(false);
     }
   };
   return (
@@ -33,6 +43,11 @@ const ContactForm = () => {
               onChange={(e) => setFirstName(e.target.value)}
             />
           </div>
+          {error && firstName.length <= 0 ? (
+            <small className={styles.small}>Please enter your first name</small>
+          ) : (
+            ''
+          )}
         </div>
         <div className={styles['inner__first__row']}>
           <label htmlFor="last">Last Name</label>
@@ -47,6 +62,11 @@ const ContactForm = () => {
               onChange={(e) => setLastName(e.target.value)}
             />
           </div>
+          {error && lastName.length <= 0 ? (
+            <small className={styles.small}>Please enter your last name</small>
+          ) : (
+            ''
+          )}
         </div>
       </div>
       <div className={styles['email__section']}>
@@ -62,19 +82,31 @@ const ContactForm = () => {
             onChange={(e) => setIsEmail(e.target.value)}
           />
         </div>
+        {error && isEmail.length <= 0 ? (
+          <small className={styles.small}>Please enter your email</small>
+        ) : (
+          ''
+        )}
+      </div>
+      <div className="message__section">
+        <label htmlFor="message">Message</label>
+        <div className={styles['text__area__box']}>
+          <textarea
+            className={styles['text__area']}
+            id="message"
+            name="message"
+            placeholder="Send me a message and i'll reply as soon as possible..."
+            value={isTextArea}
+            onChange={(e) => setIsTextArea(e.target.value)}
+          ></textarea>
+        </div>
+        {error && isTextArea.length <= 0 ? (
+          <small className={styles.small}>Please enter a message</small>
+        ) : (
+          ''
+        )}
       </div>
 
-      <label htmlFor="message">Message</label>
-      <div className={styles['text__area__box']}>
-        <textarea
-          className={styles['text__area']}
-          id="message"
-          name="message"
-          placeholder="Send me a message and i'll reply as soon as possible..."
-          value={isTextArea}
-          onChange={(e) => setIsTextArea(e.target.value)}
-        ></textarea>
-      </div>
       <div className={styles['input__checkbox']}>
         <label>
           <input type="checkbox" />
